@@ -6,68 +6,82 @@
     <title>CV</title>
 </head>
 
-    <header bgcolor="#d4d0c0">
-        <h1 align="center">Curriculum</h1>
-        <nav align="center">
-            <ul style="list-style:none; padding:0; margin:0;">
-                <li style="display:inline; margin:0 10px;"><a href="#perfil"><b>Inicio</b></a></li>
-                <li style="display:inline; margin:0 10px;"><a href="#social"><b>Información</b></a></li>
-                <li style="display:inline; margin:0 10px;"><a href="#contacto"><b>Contacto</b></a></li>
+    <header>
+        <h1 style="text-align: center;">Curriculum</h1>
+        <nav>
+            <ul style="list-style-type: none; text-decoration: none;">
+                <li><a href="#perfil"><b>Inicio</b></a></li>
+                <li><a href="#social"><b>Información</b></a></li>
+                <li><a href="#contacto"><b>Contacto</b></a></li>
             </ul>
         </nav>
-    </header>
+    </header>   
 
     <section class="perfil" id="perfil">
-        <div class="izquierda" align="center">
-            <img src="images/Yo.jpg" alt="Foto de Héctor" width="200">
 
-            <h2>Héctor Jarque García</h2>
-            <p>Segundo año de <b>DAW</b></p>
-        </div>
+    <table width="100%">
+        <tr>
+            <td align="left" width="30%">
+                <img src="images/Yo.jpg" alt="Foto de Héctor" width="34%">
 
-        <div class="derecha">
-            <h1>Experiencia laboral</h1>
-            <h2>Prácticas de 1º de DAW</h2>
-            <ul>
-                <li>Desarrollo de aplicaciones web con <b>HTML</b>, <b>CSS</b> y <b>JavaScript</b></li>
-                <li>Programación backend en <b>Java</b></li>
-                <li>Experiencia en otras tecnologías como <b>SQL</b>, <b>MongoDB</b> o <b>Python</b></li>
-            </ul>
+                <h2>Héctor Jarque García</h2>
+                <p>Segundo año de <b>DAW</b></p>
 
-            <h2>Federació de Triatló de la Comunitat Valenciana (FTCV)</h2>
-            <ul>
-                <li>Atención al público durante eventos</li>
-                <li>Logística y montaje de circuitos</li>
-                <li>Gestión de ventas de chips y alimentos</li>
-            </ul>
-        </div>
+            </td>
+
+            <td align="right" valign="top" width="70%">
+
+                <h1>Experiencia laboral</h1>
+                <h2>Prácticas de 1º de DAW</h2>
+
+                <ul style="list-style-type: none;">
+
+                    <li>Desarrollo de aplicaciones web con <b>HTML</b>, <b>CSS</b> y <b>JavaScript</b></li>
+                    <li>Programación backend en <b>Java</b></li>
+                    <li>Experiencia en otras tecnologías como <b>SQL</b>, <b>MongoDB</b> o <b>Python</b></li>
+                </ul>
+
+                <h2>Federació de Triatló de la Comunitat Valenciana (FTCV)</h2>
+
+                <ul style="list-style-type: none;">
+
+                    <li>Atención al público durante eventos</li>
+                    <li>Logística y montaje de circuitos</li>
+                    <li>Gestión de ventas de chips y alimentos</li>
+
+                </ul>
+            </td>
+        </tr>
+    </table>
+
     </section>
 
-    <section class="social" id="social" bgcolor="#d4d0c0" align="center">
+
+    <section id="social" align="center">
         <h2>Mis redes sociles</h2>
-        <div class="redes" align="center">
+        <div>
             <a href="https://es.linkedin.com/in/hector-jarque-developer">
                 <img src="images/Linkedin.png" alt="" width="24">LinkedIn
-            </a> &nbsp;&nbsp;
+            </a>
             <a href="https://github.com/HectorJarque">
                 <img src="images/Github.png" alt="" width="24">GitHub
             </a>
         </div>
     </section>
 
-    <section class="contacto" id="contacto" bgcolor="#000" align="center">
-        <font color="#fff">
+    <section id="contacto" align="center">
             <h2>Contacto</h2>
-            <p> +34 601 75 83 77</p>
-            <p> h.jarqueg@gmail.com</p>
-        </font>
+            <p> +34 661 548 454</p>
+            <p> curriculum@practica.com</p>
+
         <!-- No se como hacer que se envíe a algun sitio -->
-        <form action="" method="post" align="center"> 
+        <form action="" method="" align="center"> 
             <p><input type="text" placeholder="Tu nombre" required></p>
             <p><input type="email" placeholder="Tu email" required></p>
             <p><textarea placeholder="Tu mensaje" required></textarea></p>
             <p><button type="submit">Envía tu mensaje</button></p>
         </form>
+        
     </section>
 
 </body>
