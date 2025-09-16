@@ -1,88 +1,142 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV</title>
 </head>
+<body>
 
-    <header>
-        <h1 style="text-align: center;">Curriculum</h1>
+    <header align="center">
+        <h1>Currículum</h1>
+        
         <nav>
-            <ul style="list-style-type: none; text-decoration: none;">
-                <li><a href="#perfil"><b>Inicio</b></a></li>
-                <li><a href="#social"><b>Información</b></a></li>
-                <li><a href="#contacto"><b>Contacto</b></a></li>
-            </ul>
+
+            <table align="center">
+                <tr>
+                    <td><a href="#perfil"><b>Inicio</b></a></td>
+                    <td><a href="#experiencia"><b>Experiencia</b></a></td>
+                    <td><a href="#contacto"><b>Contacto</b></a></td>
+                </tr>
+            </table>
+
         </nav>
     </header>   
+    
+    <br>
+    <br>
+    <br>
+    <br>
 
-    <section class="perfil" id="perfil">
-
-    <table width="58%" align="center">
+    <table width="67%" align="center">
         <tr>
-            <td align="left" width="45%">
-                <img src="images/Yo.jpg" alt="Foto de Héctor" width="34%">
+            <td>
 
-                <h2>Héctor Jarque García</h2>
-                <p>Segundo año de <b>DAW</b></p>
+                <main>
 
-            </td>
+                    <table width="100%" style="vertical-align: top;">
+                        <tr>
 
-            <td align="right" valign="top" width="70%">
+                            <td width="50%" id="perfil">
+                                <section>
+                                    <img src="images/Yo.jpg" alt="Foto de Héctor Jarque" width="150">
+                                    <h2>Héctor Jarque García</h2>
+                                    <p>Segundo año de <strong>DAW</strong> (Desarrollo de Aplicaciones Web)</p>
+                                </section>
+                            </td>
+        
+                            <td width="50%" id="experiencia">
 
-                <h1>Experiencia laboral</h1>
-                <h2>Prácticas de 1º de DAW</h2>
+                                <section>
 
-                <ul style="list-style-type: none;">
+                                    <h1>Experiencia laboral</h1>
 
-                    <li>Desarrollo de aplicaciones web con <b>HTML</b>, <b>CSS</b> y <b>JavaScript</b></li>
-                    <li>Programación backend en <b>Java</b></li>
-                    <li>Experiencia en otras tecnologías como <b>SQL</b>, <b>MongoDB</b> o <b>Python</b></li>
-                </ul>
+                                    <article>
+                                        <h2>Prácticas de 1º de DAW</h2>
+                                        <ul>
 
-                <h2>Federació de Triatló de la Comunitat Valenciana (FTCV)</h2>
+                                            <li>Desarrollo de aplicaciones web con <strong>HTML</strong>, <strong>CSS</strong> y <strong>JavaScript</strong></li>
 
-                <ul style="list-style-type: none;">
+                                            <li>Programación backend en <strong>Java</strong></li>
 
-                    <li>Atención al público durante eventos</li>
-                    <li>Logística y montaje de circuitos</li>
-                    <li>Gestión de ventas de chips y alimentos</li>
+                                            <li>Experiencia en otras tecnologías como <strong>SQL</strong>, <strong>MongoDB</strong> o <strong>Python</strong></li>
 
-                </ul>
+                                        </ul>
+                                    </article>
+
+                                    <article>
+                                        <h2>Federació de Triatló de la Comunitat Valenciana (FTCV)</h2>
+                                        <ul>
+                                            <li>Atención al público durante eventos</li>
+
+                                            <li>Logística y montaje de circuitos</li>
+
+                                            <li>Gestión de ventas de chips y alimentos</li>
+                                        </ul>
+                                    </article>
+
+                                </section>
+
+                            </td>
+                        </tr>
+                    </table>
+
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <section id="social" align="center">
+                        <h2>Mis redes sociales</h2>
+                        <p>
+
+                            <a href="https://es.linkedin.com/in/hector-jarque-developer">
+                                <img src="images/Linkedin.png" alt="Logotipo de LinkedIn" width="24"> LinkedIn
+                            </a>
+
+                            <a href="https://github.com/HectorJarque">
+                                <img src="images/Github.png" alt="Logotipo de GitHub" width="24"> GitHub
+                            </a>
+                            
+                        </p>
+                    </section>
+
+                </main>
+
+                <br>
+                <br>
+                <br> 
+                <br> 
+                <footer id="contacto" align="center">
+                    <h2>Contacto</h2>
+                    <address>
+                        +34 661 548 454<br>
+                        <a href="mailto:curriculum@practica.com">curriculum@practica.com</a>
+                    </address>
+            
+                    <form action="mailto:curriculum@practica.com"> 
+                        <p>
+                            <label for="nombre">Tu nombre:</label><br>
+                            <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+                        </p>
+
+                        <p>
+                            <label for="email">Tu email:</label><br>
+                            <input type="email" id="email" name="email" placeholder="Email" required>
+                        </p>
+
+                        <p>
+                            <label for="mensaje">Tu mensaje:</label><br>
+                            <textarea id="mensaje" name="mensaje" rows="5" cols="30" placeholder="Mensaje" required></textarea>
+                        </p>
+
+                        <p>
+                            <button type="submit">Enviar mensaje</button>
+                        </p>
+                    </form>
+                </footer>
             </td>
         </tr>
     </table>
-
-    </section>
-
-
-    <section id="social" align="center">
-        <h2>Mis redes sociles</h2>
-        <div>
-            <a href="https://es.linkedin.com/in/hector-jarque-developer">
-                <img src="images/Linkedin.png" alt="" width="24">LinkedIn
-            </a>
-            <a href="https://github.com/HectorJarque">
-                <img src="images/Github.png" alt="" width="24">GitHub
-            </a>
-        </div>
-    </section>
-
-    <section id="contacto" align="center">
-            <h2>Contacto</h2>
-            <p> +34 661 548 454</p>
-            <p> curriculum@practica.com</p>
-
-        <!-- No se como hacer que se envíe a algun sitio -->
-        <form action="" method="" align="center"> 
-            <p><input type="text" placeholder="Tu nombre" required></p>
-            <p><input type="email" placeholder="Tu email" required></p>
-            <p><textarea placeholder="Tu mensaje" required></textarea></p>
-            <p><button type="submit">Envía tu mensaje</button></p>
-        </form>
-        
-    </section>
 
 </body>
 </html>
